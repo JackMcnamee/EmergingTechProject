@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV FLASK_APP=rando.py
+ENV FLASK_APP=web_service.py
 
 CMD python -m flask run

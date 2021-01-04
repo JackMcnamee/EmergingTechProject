@@ -18,12 +18,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <input class="form-control" id="input" type="text" placeholder="Speed value">
+                <label for="speed">Speed Value</label>
+                <input class="form-control" id="speed" type="number" placeholder="Speed value">
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                <button type="button" class="btn btn-primary" id="power-button">Power Value</button>
+                <button type="submit" class="btn btn-primary" value="submit">Power Value</button>
             </div>
         </div>
         <div class="row">
@@ -47,14 +48,14 @@
     -->
 
 
-    <script>
+    <!-- <script>
         // Adapted from stack overflow posts.
         $("#power-button").click(function(e) {
             e.preventDefault();
-            $.getJSON("/api/normal", function(data) {
+            $.getJSON("/api/power", function(data) {
                 $('#output').val(data.value);
             });
         });
-    </script>
+    </script> -->
   </body>
 </html>
