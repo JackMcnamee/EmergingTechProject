@@ -1,0 +1,33 @@
+<!doctype html>
+
+<!-- Copied and adapted from Bootstrap homepage. -->
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Wind Turbine Power</title>
+  </head>
+  <body>
+    <h1>Enter wind speed below to see what the corresponding power output of a wind turbine is equal to</h1>
+    <form action="/" method="POST">
+        <label for="speed">Wind Speed: </label>
+        <br>
+        <input type="number" id="speed" name="speed" value="1" step="0.001">
+        <br><br>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+     <h3>Power output is = {{prediction}}</h3>
+     
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- Changed from slim to full jQuery. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  </body>
+</html>
